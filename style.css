@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color: #1a1b26;
+  --container-color: #24283b;
+  --primary-text-color: #c0caf5;
+  --secondary-text-color: #414868;
+  --container-shadow: 8px 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+main {
+  margin-top: 40px;
+  padding: 40px 60px;
+  height: auto;
+  border-radius: 24px;
+  background-color: var(--container-color);
+  box-shadow: var(--container-shadow);
+}
+
+.main-title {
+  margin-bottom: 10px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-position: inside;
+}
+
+.project-list__item a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.project-list__item a:hover {
+  color: red;
+}
